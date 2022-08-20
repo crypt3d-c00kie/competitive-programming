@@ -1,32 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> solve(vector<int>& arr){
-    vector<int> solution;
-    sort(arr.begin(),arr.end());
-    // sorting array -> sort(arr,arr+n) // sorting vector -> sort(arr.begin(),arr.end())
-    for(int i=1;i<arr.size();i++){
-        if(arr[i] == arr[i-1])
-            solution.push_back(arr[i]);                     
+vector<int> findDuplicates(vector<int>& nums) {
+    vector<int> ans;   
+    sort(nums.begin(),nums.end());
+    
+    for(int i=1;i<nums.size();i++){
+        if(nums[i] == nums[i-1]){
+            ans.push_back(nums[i]);
+            i++;
+        }
     }
-    return solution;
+    return ans;
 }
 int main(){
-    vector<int> given;
     int nSize;
-    cout << "Number of elements : ";
+    vector<int> given;
+    vector<int> resultant;
+
+    cout << "Number of elements :: ";
     cin >> nSize;
-    cout << "Enter the elements : ";
+
+    cout << "Elements :: ";
     for(int i=0;i<nSize;i++){
         int temp;
         cin >> temp;
         given.push_back(temp);
     }
     
-    vector<int> solution1;
-    solution1 = solve(given);
-    for(int i=0;i<solution1.size();i++)
-        cout << solution1[i] << " ";
-    
+    resultant =  findDuplicates(given);
+    cout << "Solution :: ";
+    for(int i=0;i<resultant.size();i++)
+        cout << resultant[i] << " ";
+
     return 0;
 }
