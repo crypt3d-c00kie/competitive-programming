@@ -8,7 +8,6 @@ bool isPalindrome(string s){
     int right = s.length()-1;
 
     while(left < right){
-
         if(!isalnum(s[left]))
             left++;
         else if(!isalnum(s[right]))
