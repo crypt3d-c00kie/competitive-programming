@@ -24,7 +24,6 @@ int main(){
         cin >> tmp;
         given.push_back(tmp);
     }
-    
     cout << "Resultant :: ";
     moveZeroes(given);
     for(auto x : given)
