@@ -14,6 +14,7 @@ int numberOfSteps(int num) {
         }
     }
     return count;
+    
 }
 int main(){
     int n;
