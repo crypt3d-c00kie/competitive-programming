@@ -12,6 +12,7 @@ void moveZeroes(vector<int>& nums) {
         }
     }
 }
+
 int main(){
     int n;
     vector<int> given;
