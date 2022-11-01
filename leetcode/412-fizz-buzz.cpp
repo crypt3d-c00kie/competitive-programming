@@ -3,7 +3,6 @@ using namespace std;
 
 vector<string> fizzBuzz(int n) {
     vector<string> solution;
-    
     for(int i=1;i<=n;i++){
         if(i % 3 == 0 and i % 5 == 0)
             solution.push_back("FizzBuzz");
