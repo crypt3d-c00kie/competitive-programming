@@ -2,13 +2,12 @@
 using namespace std;
 
 vector<int> runningSum(vector<int>& nums){
-    partial_sum(begin(nums),end(nums),begin(nums));
-    /* partial_sum( ): This function assigns a partial sum
-     of the corresponding elements of an array to every position
-     of the second array. It returns the partial sum of all the set
-      of values lying between [first, last) and stores it in
-      another array b. 
-    */
+    // partial_sum(begin(nums),end(nums),begin(nums));
+    int sum = 0;
+    for(int i=0;i<nums.size();i++){
+        sum += nums[i];
+        nums[i] = sum;
+    }
     return nums;
 }
 
