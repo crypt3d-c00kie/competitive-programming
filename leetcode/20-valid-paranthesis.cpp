@@ -15,6 +15,7 @@ bool isValid(string given){
     }
     return st.empty();
 }
+
 int main(){
     string given;
     cout << "Given :: ";
