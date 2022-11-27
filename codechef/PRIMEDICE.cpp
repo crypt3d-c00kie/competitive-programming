@@ -9,6 +9,7 @@ bool isPrime(ll n){
         return false;
     return true;
 }
+
 void solve(){
     ll x,y;
     cin >> x >> y;
