@@ -2,7 +2,6 @@
 using namespace std;
 
 // program to check if the subsequence exist 
-
 bool isSubsequence(string &s, string &t){
     int n = s.length(),m=t.length();
     int j = 0; 
