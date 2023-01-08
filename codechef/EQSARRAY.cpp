@@ -3,7 +3,7 @@
 #define ld long double
 using namespace std;
 
-int main(){
+int main(){ 
 	ll t;
 	cin>>t;
 	while(t--){
