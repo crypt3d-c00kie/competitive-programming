@@ -11,8 +11,7 @@ int minDeletionSize(vector<string>& strs) {
             if(strs[j][i] > strs[j+1][i]){
                 delCount++;
                 break;
-            }
-                
+            }    
         }
     }
     return delCount;
