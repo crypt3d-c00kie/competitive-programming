@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int minDeletionSize(vector<string>& strs) {
+int minDeletionSize(vector<string>& strs){
     // iterate through each column
     // check if col is non-decreasing
     // if col is decreasing, increment count;
