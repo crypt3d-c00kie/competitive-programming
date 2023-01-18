@@ -16,6 +16,7 @@ int reverse(int x){
         return 0;
     }
 }
+
 int main(){
     int n;
     cout << "Given :: ";
