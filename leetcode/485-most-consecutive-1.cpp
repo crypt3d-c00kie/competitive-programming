@@ -18,7 +18,7 @@ int findMaxConsecutiveOnes(vector<int>& nums) {
     int maxCount = INT_MIN;
     for(auto x : visited){
         maxCount = max(maxCount, x);
-    }
+    } 
     return maxCount;   
 }
 int main(){
