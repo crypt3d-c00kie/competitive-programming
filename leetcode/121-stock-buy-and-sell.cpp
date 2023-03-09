@@ -31,6 +31,6 @@ int main(){
 
     }
     profit = maxProfit(given);
-    cout << "maxProfit :: " << profit << endl;
+    cout << "maxProfit :: " << profit << endl; 
     return 0;
 }
