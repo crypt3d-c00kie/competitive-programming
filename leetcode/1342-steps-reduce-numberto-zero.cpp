@@ -6,7 +6,7 @@ int numberOfSteps(int num) {
     while(num!=0){
         if(num%2){
             num-=1;
-            count++;
+            count++; 
         }
         else{
             num/=2;
