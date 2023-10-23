@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd 
 
 def article_views(views: pd.DataFrame) -> pd.DataFrame:
     authorsWithOwn = views[views['viewer_id'] == views['author_id']][['viewer_id']].drop_duplicates()
